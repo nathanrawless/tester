@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan Matematika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+        }
+        .answer {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #2196F3;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pertanyaan Matematika</h1>
+        <p>Selesaikan persamaan:</p>
+        <h2>2sin(x) - 1 = 0</h2>
+        <p>pada 0 ≤ x < 2π</p>
+        <input type="text" class="answer" placeholder="Masukkan jawaban di sini" id="userAnswer">
+        <button onclick="submitAnswer()">Kirim</button>
+    </div>
+
+    <script>
+        function submitAnswer() {
+            // Redirect ke halaman foto
+            window.location.href = 'foto.html'; // Ganti dengan nama file foto yang diinginkan
+        }
+    </script>
+</body>
+</html>
